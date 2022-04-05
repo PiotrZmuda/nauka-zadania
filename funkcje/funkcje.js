@@ -1,61 +1,55 @@
-// const people = [
-//   {
-//     name: "Andrzej",
-//     age: 19,
-//   },
-//   {
-//     name: "Jasiek",
-//     age: 16,
-//   },
-// ];
+// 1. Napisz funkcję o nazwie sum, która będzie przyjmować dwa argumenty i zwracać ich sumę.
+// Wywołaj funkcję i sprawdź czy działa poprawnie.
 
-// function bar(clientDetails, barmanOnBreak) {
-//   if (barmanOnBreak === true) {
-//     return `The bar is closed. The barman's on break`;
-//   }
-//   for (const key of Array(clientDetails)) {
-//     if (key.age >= 18) {
-//       return `"spokojnie ${key.name} barman cię zaraz obsłuży"`;
-//     } else {
-//       return `"${key.name}, uciekaj do domu, bo matce powiem!"`;
-//     }
-//   }
+// function sum( x, y ){
+//     return x * y
 // }
-// console.log(bar(people[1], false)
+// const result = sum(2,2)
+// console.log(result)
 
-// 2. Używając poniższego obiektu za pomocą pętli for...of i logiki postaraj się zwrócić
-// informację dla użytkownika czy oglądał dany film czy nie.
-// W przypadku kiedy dany film został już obejrzany w konsoli powinna pojawić się
-// informacja: 
-// np. "Already watched 'The Hobbit: An Unexpected Journey' by Peter Jackson." a
-// gdy pozostaje do obejrzenia: "You still need to watch 'The Batman' by Matt
-// Reeves.".
+// 2** Zadeklaruj tablicę z czterema imionami. Następnie napisz funkcję, która jako argument będzie
+// przyjmować tę tablicę oraz drugi argument - literę. Następnie sprawdź czy dana litera występuje w
+// każdym z elementów tablicy i zwróć informację na ten temat w konsoli. Sprawdź czy na wynik ma
+// wpływ wielkość szukanej litery. Zapoznaj się z dokumentacją:
 
-const films = [
-    {
-    title: 'The Hobbit: An Unexpected Journey',
-    director:'Peter Jackson',
-    watched: true,
-    },
-    {
-    title: 'THOR: RAGNAROK',
-    director:'Taika Waititi',
-    watched: true,
-    },
-    {
-    title: 'The Batman',
-    director:'Matt Reeves',
-    watched: false,
-    },
-    ]
+// const names = [
+//     'Piotr',
+//     'Paweł',
+//     'Mateusz',
+//     'Ola',
+// ]
+// function checkTheLetter( arr, letter){
+//     for(const key of names){
+//         if(key.toLowerCase().includes(letter.toLowerCase())){
+//             return `litera ${letter} występuję`
+//         } else{
+//            return `brak litery ${letter}`
+//         }
+//     }
+// }
+// console.log(checkTheLetter(names, 'o'))
 
-    function watchVideo(video){
-        for( const key of Array(video)){
-            if(key.watched === true){
-                return `"Already watched ${key.title}, ${key.director}"`
-            } else{
-                return `"You still need to watch ${key.title}, ${key.director}"`
-            }
-        }
-    }
-    console.log(watchVideo(films[2]))
+
+// 6. Napisz funkcję, która przyjmuje jako parametr tablicę i nowy element do tablicy. Funkcja ta powinna
+// przeiterować tablicę sprawdzając czy już taki element w niej jest. W przypadku jeśli go nie ma, to
+// powinna dodać go do tablicy, a jeżeli już tam się znajduje, to wyświetlić odpowiedni komunikat.
+
+// const arr = ['a','b','c','d','e']
+// const emptyArr = []
+
+// function newElement(arr, element){
+//     for(const key of arr){
+//         if(key.includes(element)){
+//             return `element ${element} is in the array`
+//         } else{
+//             arr.push(element)
+//         }
+//     }
+// }
+// console.log(newElement(arr, 'a'))
+
+
+// 6. Napisz funkcję, która przyjmuje jako parametr tablicę i nowy element do tablicy. 
+// Funkcja ta powinna przeiterować tablicę sprawdzając czy już taki element w niej jest. 
+// W przypadku jeśli go nie ma, to powinna dodać go do tablicy, a jeżeli już tam się znajduje, to wyświetlić odpowiedni komunikat. 
+
